@@ -2,7 +2,6 @@
 
 > A blazing-fast, cross-platform, content-aware file search engine written in Go.
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/ShivangSrivastava/fynd)](https://goreportcard.com/report/github.com/ShivangSrivastava/fynd)
 ![License](https://img.shields.io/github/license/ShivangSrivastava/fynd)
 ![Go Version](https://img.shields.io/github/go-mod/go-version/ShivangSrivastava/fynd)
 ![Platform](https://img.shields.io/badge/platform-linux--macOS--windows-blue)

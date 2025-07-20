@@ -91,7 +91,7 @@ Flags:
 
 ## 📸 Screenshot
 
-> *Coming soon — Add a terminal screenshot showing a sample search result.*
+[![fynd](./screenshot/screenshot.png)](https://github.com/ShivangSrivastava/fynd)
 
 ---
 

@@ -1,4 +1,4 @@
-module github.com/ShivangSrivastava/fynd
+module github.com/shv-ng/fynd
 
 go 1.24.5
 

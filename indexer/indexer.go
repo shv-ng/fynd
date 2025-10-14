@@ -3,7 +3,7 @@ package indexer
 import (
 	"time"
 
-	"github.com/ShivangSrivastava/fynd/models"
+	"github.com/shv-ng/fynd/models"
 )
 
 func Indexer(dbcache map[string]time.Time, input <-chan models.File, output chan<- models.IndexedFile) (int, []string) {

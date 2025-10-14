@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"github.com/ShivangSrivastava/fynd/server"
+	"github.com/shv-ng/fynd/server"
 	"github.com/spf13/cobra"
 )
 

@@ -7,10 +7,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ShivangSrivastava/fynd/app"
-	"github.com/ShivangSrivastava/fynd/server"
-	"github.com/ShivangSrivastava/fynd/store"
-	"github.com/ShivangSrivastava/fynd/utils"
+	"github.com/shv-ng/fynd/app"
+	"github.com/shv-ng/fynd/server"
+	"github.com/shv-ng/fynd/store"
+	"github.com/shv-ng/fynd/utils"
 	"github.com/spf13/cobra"
 )
 

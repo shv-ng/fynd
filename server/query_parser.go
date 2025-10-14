@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ShivangSrivastava/fynd/app"
-	"github.com/ShivangSrivastava/fynd/indexer"
+	"github.com/shv-ng/fynd/app"
+	"github.com/shv-ng/fynd/indexer"
 )
 
 type QueryOptions struct {

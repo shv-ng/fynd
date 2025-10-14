@@ -2,8 +2,8 @@
 
 > A blazing-fast, cross-platform, content-aware file search engine written in Go.
 
-![License](https://img.shields.io/github/license/ShivangSrivastava/fynd)
-![Go Version](https://img.shields.io/github/go-mod/go-version/ShivangSrivastava/fynd)
+![License](https://img.shields.io/github/license/shv-ng/fynd)
+![Go Version](https://img.shields.io/github/go-mod/go-version/shv-ng/fynd)
 ![Platform](https://img.shields.io/badge/platform-linux--macOS--windows-blue)
 
 **Fynd** helps you instantly search through your local files with full-text indexing, inline query filters, and a fast, lightweight interface — all powered by Go and SQLite.
@@ -25,7 +25,7 @@
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/ShivangSrivastava/fynd.git
+git clone https://github.com/shv-ng/fynd.git
 cd fynd
 go mod tidy
 go build .
@@ -95,7 +95,7 @@ Flags:
 
 ## 📸 Screenshot
 
-[![fynd](./screenshot/screenshot.png)](https://github.com/ShivangSrivastava/fynd)
+[![fynd](./screenshot/screenshot.png)](https://github.com/shv-ng/fynd)
 
 ---
 
@@ -170,4 +170,4 @@ See [`LICENSE`](./LICENSE) for details.
 ## 🤝 Contributing
 
 PRs and suggestions welcome!
-If you find a bug or want a feature, open an [issue](https://github.com/ShivangSrivastava/fynd/issues).
+If you find a bug or want a feature, open an [issue](https://github.com/shv-ng/fynd/issues).

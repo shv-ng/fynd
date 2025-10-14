@@ -6,8 +6,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ShivangSrivastava/fynd/app"
 	"github.com/goccy/go-yaml"
+	"github.com/shv-ng/fynd/app"
 )
 
 func LoadYAMLSettings(path string) (app.Settings, error) {

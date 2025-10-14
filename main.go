@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ShivangSrivastava/fynd/cmd"
+	"github.com/shv-ng/fynd/cmd"
 )
 
 func main() {

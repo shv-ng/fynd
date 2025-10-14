@@ -6,11 +6,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ShivangSrivastava/fynd/app"
-	"github.com/ShivangSrivastava/fynd/crawler"
-	"github.com/ShivangSrivastava/fynd/indexer"
-	"github.com/ShivangSrivastava/fynd/models"
-	"github.com/ShivangSrivastava/fynd/store"
+	"github.com/shv-ng/fynd/app"
+	"github.com/shv-ng/fynd/crawler"
+	"github.com/shv-ng/fynd/indexer"
+	"github.com/shv-ng/fynd/models"
+	"github.com/shv-ng/fynd/store"
 )
 
 func Sync(ctx app.Context) {

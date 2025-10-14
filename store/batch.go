@@ -3,7 +3,7 @@ package store
 import (
 	"database/sql"
 
-	"github.com/ShivangSrivastava/fynd/models"
+	"github.com/shv-ng/fynd/models"
 )
 
 const batchSize = 100

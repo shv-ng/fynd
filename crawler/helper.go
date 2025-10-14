@@ -7,7 +7,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/ShivangSrivastava/fynd/models"
+	"github.com/shv-ng/fynd/models"
 )
 
 // read dir on keeping concurrency limit

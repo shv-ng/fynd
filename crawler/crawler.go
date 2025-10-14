@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ShivangSrivastava/fynd/app"
-	"github.com/ShivangSrivastava/fynd/models"
+	"github.com/shv-ng/fynd/app"
+	"github.com/shv-ng/fynd/models"
 )
 
 type Crawler struct {

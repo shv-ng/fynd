@@ -9,8 +9,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/ShivangSrivastava/fynd/app"
-	"github.com/ShivangSrivastava/fynd/store"
+	"github.com/shv-ng/fynd/app"
+	"github.com/shv-ng/fynd/store"
 )
 
 // fileInfo aggregates file metadata and word frequency data.

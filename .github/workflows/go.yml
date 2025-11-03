@@ -27,9 +27,12 @@ jobs:
         VERSION=$(date +%Y.%m.%d)
         echo "date=$VERSION" >> $GITHUB_OUTPUT
         
-        echo "changelog<<EOF" >> $GITHUB_OUTPUT
-        git log --since="14 days ago" --pretty=format:"- %s" >> $GITHUB_OUTPUT
-        echo "EOF" >> $GITHUB_OUTPUT
+        {
+          echo "changelog<<EOF"
+          git log --since="14 days ago" --pretty=format:"- %s"
+          echo ""
+          echo "EOF"
+        } >> $GITHUB_OUTPUT
     
     - uses: actions/setup-go@v5
       if: steps.check.outputs.commits > 0

@@ -49,19 +49,19 @@ jobs:
         VERSION=${{ steps.version.outputs.date }}
         
         # Linux
-        GOOS=linux GOARCH=amd64 go build -o ${PROJECT}-${VERSION}-linux-amd64
-        GOOS=linux GOARCH=arm64 go build -o ${PROJECT}-${VERSION}-linux-arm64
+        GOOS=linux GOARCH=amd64 go build -o bin/${PROJECT}-${VERSION}-linux-amd64
+        GOOS=linux GOARCH=arm64 go build -o bin/${PROJECT}-${VERSION}-linux-arm64
         
         # Windows
-        GOOS=windows GOARCH=amd64 go build -o ${PROJECT}-${VERSION}-windows-amd64.exe
-        GOOS=windows GOARCH=arm64 go build -o ${PROJECT}-${VERSION}-windows-arm64.exe
+        GOOS=windows GOARCH=amd64 go build -o bin/${PROJECT}-${VERSION}-windows-amd64.exe
+        GOOS=windows GOARCH=arm64 go build -o bin/${PROJECT}-${VERSION}-windows-arm64.exe
         
         # macOS
-        GOOS=darwin GOARCH=amd64 go build -o ${PROJECT}-${VERSION}-darwin-amd64
-        GOOS=darwin GOARCH=arm64 go build -o ${PROJECT}-${VERSION}-darwin-arm64
+        GOOS=darwin GOARCH=amd64 go build -o bin/${PROJECT}-${VERSION}-darwin-amd64
+        GOOS=darwin GOARCH=arm64 go build -o bin/${PROJECT}-${VERSION}-darwin-arm64
         
         # Android
-        GOOS=android GOARCH=arm64 go build -o ${PROJECT}-${VERSION}-android-arm64
+        GOOS=android GOARCH=arm64 go build -o bin/${PROJECT}-${VERSION}-android-arm64
     
     - name: Create Release
       if: steps.check.outputs.commits > 0
@@ -69,7 +69,7 @@ jobs:
       with:
         tag_name: ${{ steps.version.outputs.date }}
         name: Release ${{ steps.version.outputs.date }}
-        files: ${PROJECT}-*
+        files: bin/*
         body: |
           Automated release for ${{ steps.version.outputs.date }}
           

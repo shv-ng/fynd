@@ -5,6 +5,9 @@ on:
     - cron: '0 0 */14 * *'  # Every 14 days at midnight
   workflow_dispatch:  # Manual trigger
 
+permissions:
+  contents: write  # Required to create releases
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -60,3 +63,5 @@ jobs:
           
           Changes:
           ${{ steps.version.outputs.changelog }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

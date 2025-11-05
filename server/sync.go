@@ -9,8 +9,8 @@ import (
 	"github.com/shv-ng/fynd/app"
 	"github.com/shv-ng/fynd/crawler"
 	"github.com/shv-ng/fynd/indexer"
-	"github.com/shv-ng/fynd/models"
 	"github.com/shv-ng/fynd/store"
+	"github.com/shv-ng/fynd/types"
 )
 
 func Sync(ctx app.Context) {
@@ -18,8 +18,8 @@ func Sync(ctx app.Context) {
 	var wg sync.WaitGroup
 	var mu sync.Mutex
 	sem := make(chan struct{}, ctx.Setting.MaxConcurrency)
-	crawlerToIndexerCh := make(chan models.File, 1000)
-	indexerToDBCh := make(chan models.IndexedFile, 1000)
+	crawlerToIndexerCh := make(chan types.File, 1000)
+	indexerToDBCh := make(chan types.IndexedFile, 1000)
 
 	dbcache, err := store.DBCache(ctx.DB)
 	if err != nil {

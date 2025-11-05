@@ -3,13 +3,13 @@ package store
 import (
 	"database/sql"
 
-	"github.com/shv-ng/fynd/models"
+	"github.com/shv-ng/fynd/types"
 )
 
 const batchSize = 100
 
-func BatchInsertHandler(ch <-chan models.IndexedFile, db *sql.DB) error {
-	var files []models.IndexedFile
+func BatchInsertHandler(ch <-chan types.IndexedFile, db *sql.DB) error {
+	var files []types.IndexedFile
 	for file := range ch {
 		files = append(files, file)
 
@@ -31,7 +31,7 @@ func BatchInsertHandler(ch <-chan models.IndexedFile, db *sql.DB) error {
 	return nil
 }
 
-func batchInsert(files []models.IndexedFile, db *sql.DB) error {
+func batchInsert(files []types.IndexedFile, db *sql.DB) error {
 	tx, err := db.Begin()
 	if err != nil {
 		return err
